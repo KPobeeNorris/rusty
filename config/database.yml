@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
+  username: rustyapp
+  password: <%= ENV["MYSQL_PASSWORD"] %>
   socket: /tmp/mysql.sock
 
 development:
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: rusty_production
-  username: rusty
-  password: <%= ENV['RUSTY_DATABASE_PASSWORD'] %>
+  database: rusty_app_production
+  username: rusty_app
+  password: <%= ENV['RUSTY_APP_DATABASE_PASSWORD'] %>
