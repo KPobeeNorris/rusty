@@ -24,7 +24,7 @@ gem 'jbuilder',                '2.4.1'
 gem 'minitest', '~> 5.10', '!= 5.10.2'
 
 group :development, :test do
-  gem 'mysql2', '>= 0.3.18', '< 0.5'
+  gem 'mysql2', '>= 0.3.18', '< 0.6'
   gem 'byebug',  '9.0.0', platform: :mri
   gem 'dotenv-rails'
 end
